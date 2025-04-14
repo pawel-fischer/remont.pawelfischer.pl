@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fischer Remonty</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #2f2f2f;
+    }
+    header {
+      background-color: #87cefa;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav {
+      background-color: #2f2f2f;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #87cefa;
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #2f2f2f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    form input, form textarea, form button {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 1em;
+    }
+    form button {
+      background-color: #87cefa;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fischer Remonty</h1>
+    <p>Solidność i precyzja</p>
+  </header>
+
+  <nav>
+    <a href="#start">Start</a>
+    <a href="#oferta">Oferta</a>
+    <a href="#realizacje">Realizacje</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="#wycena">Umów wycenę</a>
+  </nav>
+
+  <section id="start">
+    <h2>O mnie</h2>
+    <p>Nazywam się Paweł Fischer i prowadzę firmę remontową w Poznaniu. Specjalizuję się w solidnych i precyzyjnych wykończeniach wnętrz oraz remontach mieszkań. Z pasją podchodzę do każdego projektu, oferując wysoką jakość usług.</p>
+  </section>
+
+  <section id="oferta">
+    <h2>Zakres usług</h2>
+    <ul>
+      <li>Wykończenia mieszkań pod klucz</li>
+      <li>Remont łazienek</li>
+      <li>Remont kuchni</li>
+      <li>Malowanie</li>
+      <li>Szpachlowanie</li>
+      <li>Sucha zabudowa</li>
+      <li>Układanie paneli</li>
+      <li>Układanie płytek</li>
+      <li>Meble na wymiar</li>
+      <li>Instalacje elektryczne</li>
+      <li>Instalacje hydrauliczne</li>
+      <li>Elewacje</li>
+      <li>Prace montażowe</li>
+    </ul>
+  </section>
+
+  <section id="realizacje">
+    <h2>Realizacje</h2>
+    <p>Zdjęcia z realizacji znajdziesz na naszym <a href="https://www.instagram.com/fischerremonty" target="_blank">Instagramie</a>.</p>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p><strong>Paweł Fischer</strong><br>
+    NIP: 6222852511<br>
+    Saperska 42D/22, 61-493 Poznań<br>
+    Telefon: 667 001 684<br>
+    E-mail: <a href="mailto:remont@pawelfischer.pl">remont@pawelfischer.pl</a><br>
+    Strona: <a href="https://fischerremont.pl">fischerremont.pl</a></p>
+    <iframe src="https://www.google.com/maps?q=Saperska+42D,+Poznań&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section id="wycena">
+    <h2>Umów wycenę</h2>
+    <p>Skontaktuj się ze mną, aby uzyskać bezpłatną wycenę swojego projektu.</p>
+    <form action="mailto:remont@pawelfischer.pl" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Imię i nazwisko" required>
+      <input type="email" name="email" placeholder="Adres e-mail" required>
+      <textarea name="message" rows="5" placeholder="Opis zlecenia" required></textarea>
+      <button type="submit">Wyślij</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fischer Remonty – Wszystkie prawa zastrzeżone</p>
+  </footer>
+</body>
+</html>
