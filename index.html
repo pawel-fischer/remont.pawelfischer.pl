@@ -3,133 +3,189 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/start.css">
+  <link rel="stylesheet" href="styles/oferta.css">
+  <link rel="stylesheet" href="styles/realizacje.css">
+  <link rel="stylesheet" href="styles/kontakt.css">
+  <link rel="stylesheet" href="styles/wycena.css">
+  <link rel="stylesheet" href="styles/footer.css">
   <title>Fischer Remonty</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #2f2f2f;
-    }
-    header {
-      background-color: #87cefa;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-    nav {
-      background-color: #2f2f2f;
-      color: white;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 10px 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    h2 {
-      color: #87cefa;
-      margin-bottom: 20px;
-    }
-    footer {
-      background-color: #2f2f2f;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    form input, form textarea, form button {
-      display: block;
-      width: 100%;
-      margin-bottom: 15px;
-      padding: 10px;
-      font-size: 1em;
-    }
-    form button {
-      background-color: #87cefa;
-      border: none;
-      color: white;
-      cursor: pointer;
-    }
-  </style>
 </head>
 <body>
   <header>
-    <h1>Fischer Remonty</h1>
-    <p>Solidność i precyzja</p>
+    <a href="#"><img src="./assets/logo.png" alt="Logo Fischer Remonty" /></a>
+    <button class="menu-toggle" aria-label="Otwórz menu">&#9776;</button>
+    <nav>
+      <button class="menu-close" aria-label="Zamknij menu">&times;</button>
+      <a href="#start">Start</a>
+      <a href="#oferta">Oferta</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#wycena"><button>Umów wycenę</button></a>
+    </nav>
   </header>
-
-  <nav>
-    <a href="#start">Start</a>
-    <a href="#oferta">Oferta</a>
-    <a href="#realizacje">Realizacje</a>
-    <a href="#kontakt">Kontakt</a>
-    <a href="#wycena">Umów wycenę</a>
-  </nav>
-
+  
   <section id="start">
-    <h2>O mnie</h2>
-    <p>Nazywam się Paweł Fischer i prowadzę firmę remontową w Poznaniu. Specjalizuję się w solidnych i precyzyjnych wykończeniach wnętrz oraz remontach mieszkań. Z pasją podchodzę do każdego projektu, oferując wysoką jakość usług.</p>
+    <div class="top-section">
+        <h1>
+            Solidność i precyzja -
+            </br>Fischer Remonty
+        </h1>
+        <p>Nazywam się Paweł Fischer i od 2024 roku prowadzę firmę zajmującą się kompleksowymi remontami mieszkań na terenie Poznania. Łączę doświadczenie, precyzję i dbałość o każdy detal.</p>
+    </div>
+    <a href="#oferta"><button>Poznaj ofertę</button></a>
   </section>
 
   <section id="oferta">
-    <h2>Zakres usług</h2>
+    <h2>W czym mogę Ci pomóc</h2>
     <ul>
-      <li>Wykończenia mieszkań pod klucz</li>
-      <li>Remont łazienek</li>
-      <li>Remont kuchni</li>
-      <li>Malowanie</li>
-      <li>Szpachlowanie</li>
-      <li>Sucha zabudowa</li>
-      <li>Układanie paneli</li>
-      <li>Układanie płytek</li>
-      <li>Meble na wymiar</li>
-      <li>Instalacje elektryczne</li>
-      <li>Instalacje hydrauliczne</li>
-      <li>Elewacje</li>
-      <li>Prace montażowe</li>
+      <li>
+        <img src="assets/logo.png" alt="TODO">
+        <h4>Wykończenia mieszkań pod klucz</h4>
+        <a href="#" class="btn">Czytaj więcej</a>
+    </li>
+      <li>
+        <img src="assets/logo.png" alt="Remont łazienek">    
+        <h4>Remont łazienek</h4>
+        <a href="#" class="btn">Czytaj więcej</a>
+        
+    </li>
+      <li>
+        <img src="assets/logo.png" alt="Remont kuchni">    
+        <h4>Remont kuchni</h4>
+        <a href="#" class="btn">Czytaj więcej</a>
+        
+    </li>
+      <li>
+        <img src="assets/logo.png" alt="Malowanie">    
+        <h4>Malowanie</h4>
+        <a href="#" class="btn">Czytaj więcej</a>
+        
+    </li>
+      <li>
+        <img src="assets/logo.png" alt="Szpachlowanie">    
+        <h4>Szpachlowanie</h4>
+        <a href="#" class="btn">Czytaj więcej</a>
+        
+    </li>
+      <li>
+        <img src="assets/logo.png" alt="Sucha zabudowa">    
+        <h4>Sucha zabudowa</h4>
+        <a href="#" class="btn">Czytaj więcej</a>
+        
+    </li>
+      <li>
+        <img src="assets/logo.png" alt="Układanie paneli">    
+        <h4>Układanie paneli</h4>
+        <a href="#" class="btn">Czytaj więcej</a>
+        
+    </li>
+      <li>
+        <img src="assets/logo.png" alt="Układanie płytek">    
+        <h4>Układanie płytek</h4>
+        <a href="#" class="btn">Czytaj więcej</a>
+        
+    </li>
+      <li>
+        <img src="assets/logo.png" alt="Meble na wymiar">    
+        <h4>Meble na wymiar</h4>
+        <a href="#" class="btn">Czytaj więcej</a>
+        
+    </li>
+      <li>
+        <img src="assets/logo.png" alt="Instalacje elektryczne">    
+        <h4>Instalacje elektryczne</h4>
+        <a href="#" class="btn">Czytaj więcej</a>
+        
+    </li>
+      <li>
+        <img src="assets/logo.png" alt="Instalacje hydrauliczne">    
+        <h4>Instalacje hydrauliczne</h4>
+        <a href="#" class="btn">Czytaj więcej</a>
+        
+    </li>
+      <li>
+        <img src="assets/logo.png" alt="Elewacje">    
+        <h4>Elewacje</h4>
+        <a href="#" class="btn">Czytaj więcej</a>
+        
+    </li>
+      <li>
+        <img src="assets/logo.png" alt="Prace montażowe">    
+        <h4>Prace montażowe</h4>
+        <a href="#" class="btn">Czytaj więcej</a>
+        
+    </li>
     </ul>
   </section>
 
   <section id="realizacje">
     <h2>Realizacje</h2>
-    <p>Zdjęcia z realizacji znajdziesz na naszym <a href="https://www.instagram.com/fischerremonty" target="_blank">Instagramie</a>.</p>
+    <div class="bottom-section">
+        <p>Aktualne zdjęcia z realizacji znajdziesz na moim Instagramie: <a href="https://www.instagram.com/fischer.remonty" target="_blank">@fischer.remonty</a></p>
+        <a href="https://www.instagram.com/fischer.remonty" target="_blank" class="instagram-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#f9f9f9" width="40" height="40" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <span class="label">Zobacz realizacje</span>
+        </a>
+    </div>
   </section>
 
   <section id="kontakt">
     <h2>Kontakt</h2>
-    <p><strong>Paweł Fischer</strong><br>
-    NIP: 6222852511<br>
-    Saperska 42D/22, 61-493 Poznań<br>
-    Telefon: 667 001 684<br>
-    E-mail: <a href="mailto:remont@pawelfischer.pl">remont@pawelfischer.pl</a><br>
-    Strona: <a href="https://fischerremont.pl">fischerremont.pl</a></p>
-    <iframe src="https://www.google.com/maps?q=Saperska+42D,+Poznań&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="bottom-section">
+        <p><strong>Dane firmy</strong><br>
+        Paweł Fischer<br>
+        NIP: 6222852511<br>
+        Saperska 42D/22, 61-493 Poznań<br><br>
+        Telefon: <a href="tel:667001684">667 001 684</a><br>
+        E-mail: <a href="mailto:remont@pawelfischer.pl">remont@pawelfischer.pl</a><br>
+        </p>
+        <iframe src="https://www.google.com/maps?q=Saperska+42D,+Poznań&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
   </section>
 
   <section id="wycena">
     <h2>Umów wycenę</h2>
-    <p>Skontaktuj się ze mną, aby uzyskać bezpłatną wycenę swojego projektu.</p>
-    <form action="mailto:remont@pawelfischer.pl" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Imię i nazwisko" required>
-      <input type="email" name="email" placeholder="Adres e-mail" required>
-      <textarea name="message" rows="5" placeholder="Opis zlecenia" required></textarea>
-      <button type="submit">Wyślij</button>
-    </form>
+    <div class="bottom-section">
+        <p>Każdy projekt wyceniam indywidualnie – na miejscu lub na podstawie przesłanych materiałów. <br><br>Wypełnij formularz, aby umówić bezpłatną wycenę.</p>
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Imię" required>
+          <input type="email" name="email" placeholder="Adres e-mail" required>
+          <input type="tel" name="phone" placeholder="Numer telefonu" required>
+          <textarea name="message" rows="5" placeholder="Treść zapytania" required></textarea>
+          <button type="submit">Wyślij</button>
+        </form>
+    </div>
+    <div id="formMessage" style="display:none; margin-top: 10px;"></div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Fischer Remonty – Wszystkie prawa zastrzeżone</p>
+    <div class="top-section">
+      <p>Zaobserwój mnie na instagramie i badź na bierząco</p>
+      <a href="https://www.instagram.com/fischer.remonty" target="_blank" class="instagram-btn instagram-btn-round">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#f9f9f9" width="20" height="20" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+    </div>
+    <p>Copyright &copy; 2025 Paweł Fischer</p>
   </footer>
+
+  <a href="tel:667001684" id="cta-call">
+    <button>
+        <span class="cta-icon">📞</span>
+        <div class="text">
+            <span>Zadzwoń </span>
+            <span>667 001 684</span>
+        </div>
+    </button>
+  </a>
+
+  <div id="toast-container"></div>
 </body>
+<script src="index.js"></script>
 </html>

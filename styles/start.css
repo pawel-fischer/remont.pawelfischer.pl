@@ -1,0 +1,32 @@
+#start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#start .top-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#start .top-section h1 {
+    text-align: center;
+    line-height: 1.5;
+}
+#start .top-section p {
+    text-align: justify;
+    line-height: 1.3;
+}
+
+@media (min-width: 1200px) {
+    #start .top-section {
+        flex-direction: row;
+    }
+    #start .top-section h1 {
+        width: 50%;
+    }
+    #start .top-section p {
+        width: 50%;
+    }
+    
+}

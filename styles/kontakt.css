@@ -1,0 +1,22 @@
+#kontakt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#kontakt .bottom-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    #kontakt .bottom-section {
+        flex-direction: row;
+    }
+    #kontakt .bottom-section p{
+        width: 50%;
+    }
+    #kontakt .bottom-section iframe{
+        width: 50%;
+    }
+}
