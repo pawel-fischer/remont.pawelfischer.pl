@@ -124,3 +124,15 @@ const menuToggle = document.querySelector('.menu-toggle');
   
   window.addEventListener('load', checkViewportWidth);
   window.addEventListener('resize', checkViewportWidth);  
+
+  const ofertaUl = document.querySelector('#oferta ul');
+const scrollHint = document.querySelector('#scroll-hint');
+
+let scrollDetected = false;
+
+ofertaUl.addEventListener('scroll', () => {
+  if (!scrollDetected) {
+    scrollDetected = true;
+    scrollHint.style.display = 'none';
+  }
+});

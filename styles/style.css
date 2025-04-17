@@ -75,7 +75,6 @@ button:hover {
 }
 section {
     padding: 30px;
-    scroll-margin-top: 70px;
 }
 
 @media (min-width: 1200px) {
