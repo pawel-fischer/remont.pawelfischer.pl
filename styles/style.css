@@ -1,0 +1,85 @@
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none; 
+    color: #2f2f2f;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    background-color: #f9f9f9;
+    color: #2f2f2f;
+}
+button {
+    background-color: #87CEFA;
+    border-radius: 15px;
+    border: 1px solid #87CEFA;
+    padding: 15px 25px;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #2f2f2f;
+    transition: all 0.2s ease;
+}
+button:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    box-shadow: 3px 3px 10px 0 rgba(47, 47, 47, .5);
+}
+#cta-call {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+#cta-call button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#cta-call button .cta-icon {
+    font-size: 35px;
+}
+#cta-call button .text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+#toast-container {
+    position: fixed;
+    top: 140px;
+    right: 20px;
+    z-index: 9999;
+}
+.toast {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.toast.success {
+    background-color: #4CAF50;
+}
+.toast.error {
+    background-color: #F44336;
+}
+section {
+    padding: 30px;
+}
+
+@media (min-width: 1200px) {
+    section {
+        scroll-margin-top: 130px;
+        padding: 50px;
+    }
+}

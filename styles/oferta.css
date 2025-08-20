@@ -1,0 +1,27 @@
+#oferta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#oferta ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+#oferta li{
+    width: 250px;
+    padding: 0 20px 20px 20px;
+    border: 1px solid rgba(47, 47, 47, .4);
+    text-align: center;
+}
+#oferta li img{
+    width: 200px;
+}
+#oferta li a {
+    font-size: 15px;
+}

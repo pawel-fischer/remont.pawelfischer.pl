@@ -1,0 +1,63 @@
+#realizacje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(211, 179, 141, .2)
+}
+#realizacje .bottom-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#realizacje .bottom-section p{
+    margin-bottom: 40px;
+}
+.instagram-btn {
+    height: 60px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #f9f9f9;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background-size: 200% 200%;
+    animation: instagramGradient 5s ease infinite;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+}
+.instagram-btn span {
+    flex:1;
+    text-align: center;
+}
+
+.instagram-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 3px 3px 10px 0 rgba(47, 47, 47, .5);
+}
+@keyframes instagramGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.instagram-btn-round {
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1200px) {
+    #realizacje .bottom-section {
+        flex-direction: row;
+    } 
+    #realizacje .bottom-section p {
+        width: 50%;
+    }
+    #realizacje .instagram-btn {
+        width: 40%;
+    }
+}

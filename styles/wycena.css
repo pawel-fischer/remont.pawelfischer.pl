@@ -1,0 +1,38 @@
+#wycena {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(211, 179, 141, .2)
+}
+#wycena .bottom-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#wycena .bottom-section p{
+    margin: 0;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+}
+form input, form textarea, form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+@media (min-width: 1200px) {
+    #wycena .bottom-section {
+        flex-direction: row;
+    }
+    #wycena .bottom-section p{
+        width: 44%;
+    }
+    #wycena .bottom-section form{
+        width: 55%;
+        margin-left: 50px;
+    }
+}
